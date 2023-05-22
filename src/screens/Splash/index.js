@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const Splash = () => {
   const navigation = useNavigation();
+
   return (
     <ImageBackground
       style={styles.background}
