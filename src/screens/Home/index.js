@@ -43,6 +43,7 @@ const Home = ({ navigation }) => {
         renderItem={({ item, index }) => (
           <RecipeCard
             style={index === 0 ? { marginLeft: 24 } : {}}
+            onPress={() => navigation.navigate('RecipeDetails', { item })}
             title={item?.name}
             time={item?.cook_time_minutes}
             image={item?.thumbnail_url}
@@ -75,6 +76,7 @@ const Home = ({ navigation }) => {
           <Card
             style={index === 0 ? { marginLeft: 24 } : {}}
             title={item?.name}
+            onPress={() => navigation.navigate('RecipeDetails', { item })}
             servings={item?.num_servings}
             image={item?.thumbnail_url}
             rating={item?.user_ratings?.score}

@@ -5,4 +5,5 @@ export default colors = {
   lightGrey: '#c9c9c9',
   lightGrey2: '#A9A9A9',
   grey: '#484848',
+  grey2: '#797979',
 };

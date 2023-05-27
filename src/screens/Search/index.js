@@ -5,7 +5,7 @@ import { RecipeContext } from '../../../App';
 import styles from './styles';
 import Card from '../../components/Card';
 
-const Search = () => {
+const Search = ({ navigation }) => {
   const { recipes } = useContext(RecipeContext);
 
   const [filteredRecipes, setFilteredRecipes] = useState([]);
@@ -34,6 +34,7 @@ const Search = () => {
         renderItem={({ item }) => (
           <Card
             title={item?.name}
+            onPress={() => navigation.navigate('RecipeDetails', { item })}
             servings={item?.num_servings}
             image={item?.thumbnail_url}
             rating={item?.user_ratings?.score}

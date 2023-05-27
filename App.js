@@ -85,8 +85,8 @@ export default function App() {
               name="RecipeDetails"
               component={RecipeDetails}
               options={{
-                headerTitle: null,
                 headerLeft: (props) => <BackButton {...props} />,
+                headerTitle: '',
               }}
             />
           </Stack.Navigator>
