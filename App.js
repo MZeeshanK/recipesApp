@@ -3,6 +3,7 @@ import 'react-native-gesture-handler';
 import Splash from './src/screens/Splash';
 import Home from './src/screens/Home';
 import Search from './src/screens/Search';
+import RecipeDetails from './src/screens/RecipeDetails';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Image, Pressable, StyleSheet } from 'react-native';
@@ -79,6 +80,14 @@ export default function App() {
               name="Search"
               component={Search}
               options={{ headerLeft: (props) => <BackButton {...props} /> }}
+            />
+            <Stack.Screen
+              name="RecipeDetails"
+              component={RecipeDetails}
+              options={{
+                headerTitle: null,
+                headerLeft: (props) => <BackButton {...props} />,
+              }}
             />
           </Stack.Navigator>
         </NavigationContainer>

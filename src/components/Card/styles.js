@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginVertical: 16,
+    flexGrow: 1,
   },
   label: {
     color: colors.lightGrey2,
